@@ -1,0 +1,23 @@
+{
+  "name": "bb-plugin-auto-compact",
+  "version": "0.1.1",
+  "type": "module",
+  "engines": {
+    "bb": ">=0.48",
+    "bbPluginSdk": ">=0.6.104"
+  },
+  "bb": {
+    "name": "Auto Compact",
+    "description": "Collapses the thread follow-up composer while you read, while an agent runs, or while it asks a question.",
+    "branding": {
+      "icon": "Minimize2"
+    },
+    "server": "./server.ts",
+    "app": "./app.tsx"
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.104",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}

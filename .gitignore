@@ -1,0 +1,5 @@
+node_modules/
+dist/
+*.log
+content-script.ts.bak-*
+.DS_Store

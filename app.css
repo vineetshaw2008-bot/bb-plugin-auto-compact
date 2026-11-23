@@ -1,0 +1,19 @@
+/*
+ * Auto Compact — animation only.
+ *
+ * The app's native expand/collapse transition is 180ms with a strong ease-out.
+ * For the thread follow-up composer only, retune it to a ~150ms medium-to-fast
+ * movement. This never delays a collapse trigger: the 50px scroll check stays
+ * immediate. The home / new-thread composer is deliberately excluded.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  [data-follow-up-composer] [data-promptbox] [data-promptbox-layout] {
+    transition-duration: 150ms !important;
+    transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  }
+
+  [data-follow-up-composer] [data-promptbox] [data-promptbox-main] {
+    transition-duration: 150ms !important;
+    transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  }
+}
