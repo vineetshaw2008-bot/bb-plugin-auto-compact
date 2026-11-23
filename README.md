@@ -146,3 +146,30 @@ collapsing instead of guessing with CSS classes.
   hooks after a bb upgrade.
 - No settings and no CLI command. Enable or disable it with
   `bb plugin enable|disable auto-compact`.
+
+## Install from GitHub
+
+The plugin is published at
+`https://github.com/vineetshaw2008-bot/bb-plugin-auto-compact` (private repo —
+use an account with access).
+
+```bash
+# Pinned to the tagged release (recommended)
+bb plugin install git:github.com/vineetshaw2008-bot/bb-plugin-auto-compact@v0.1.1 --yes
+
+# Or track the main branch
+bb plugin install git:github.com/vineetshaw2008-bot/bb-plugin-auto-compact@main --yes
+
+bb plugin enable auto-compact
+bb plugin list                 # shows auto-compact@0.1.1 running
+```
+
+The separate Cloudroom theme repo (install it if you want the matching look):
+
+```bash
+git clone https://github.com/vineetshaw2008-bot/bb-themes-custom.git ~/.bb/theme/cloudroom
+bb theme set cloudroom
+```
+
+Installing the plugin does **not** auto-switch the theme. Activate the theme
+once with the command above.
